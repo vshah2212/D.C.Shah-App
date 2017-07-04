@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.SonalActivity">
+
+    <ImageView
+        android:id="@+id/SonalImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Sonal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/SonalImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="SONAL SANJAY SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sonal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/SonalAddr"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Residence: D-1/45, Dwarkesh Park, Saibaba Nagar, Borivali(W). Mumbai-92" />
+
+            <TextView
+                android:id="@+id/Sonal2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SonalAddr"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Blood Group: B+" />
+
+            <TextView
+                android:id="@+id/Sonal3"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sonal2"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +91-8828874799"
+                />
+            <Button
+                android:id="@+id/SonalCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Sonal3"
+                android:layout_below="@+id/Sonal2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/Sonal4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sonal3"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +022-28668040"
+                />
+            <Button
+                android:id="@+id/SonalCall2"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Sonal4"
+                android:layout_below="@+id/Sonal3"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/SonalHusband"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sonal4"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="HUSBAND"
+                />
+            <TextView
+                android:id="@+id/Sanjay"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SonalHusband"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="Sanjay Shah"
+                />
+
+            <TextView
+                android:id="@+id/SonalComp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sanjay"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Company: Jainam Travels" />
+
+            <TextView
+                android:id="@+id/Sanjay2"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SonalComp"
+                android:textSize="17dp"
+                android:text="Blood Group: AB+"
+                />
+            <TextView
+                android:id="@+id/Sanjay3"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sanjay2"
+                android:textSize="17dp"
+                android:text="Contact Number: +91-8828882342"
+                />
+            <Button
+                android:id="@+id/SanjayCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Sanjay3"
+                android:layout_below="@+id/Sanjay2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/SonalChild"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sanjay3"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="CHILDREN"
+                />
+
+            <TextView
+                android:id="@+id/SonalKrina"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SonalChild"
+                android:textSize="20dp"
+                android:text="Krina Sanjay Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:layout_toEndOf="@id/SonalKrina"
+                android:layout_below="@id/SonalChild"/>
+            <TextView
+                android:id="@+id/SonalJainam"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SonalKrina"
+                android:textSize="20dp"
+                android:text="Jainam Sanjay Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:layout_toEndOf="@id/SonalJainam"
+                android:layout_below="@id/SonalKrina"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

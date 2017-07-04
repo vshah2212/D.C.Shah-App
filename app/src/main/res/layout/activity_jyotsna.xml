@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.JyotsnaActivity">
+
+    <ImageView
+        android:id="@+id/JyotsnaImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Jyotsna"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JyotsnaImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="JYOTSNA VIRENDRA SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jyotsna">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/JyotsnaAddr"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Residence: , Mathuradas Road, Kandivali(W). Mumbai-67" />
+
+            <TextView
+                android:id="@+id/Jyotsna2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/JyotsnaAddr"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Blood Group: " />
+
+            <TextView
+                android:id="@+id/Jyotsna3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/Jyotsna2"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +91-9920923835"
+                />
+            <Button
+                android:id="@+id/JyotsnaCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Jyotsna3"
+                android:layout_below="@+id/Jyotsna2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/Jyotsna4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Jyotsna3"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +022-2"
+                />
+            <Button
+                android:id="@+id/JyotsnaCall2"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Jyotsna4"
+                android:layout_below="@+id/Jyotsna3"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/JyotsnaHusband"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Jyotsna4"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="HUSBAND"
+                />
+            <TextView
+                android:id="@+id/Virendra"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/JyotsnaHusband"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="Virendra Shah"
+                />
+
+            <TextView
+                android:id="@+id/JyotsnaComp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Virendra"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Company: " />
+
+            <TextView
+                android:id="@+id/Virendra2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/JyotsnaComp"
+                android:textSize="17dp"
+                android:text="Blood Group:"
+                />
+            <TextView
+                android:id="@+id/Virendra3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Virendra2"
+                android:textSize="17dp"
+                android:text="Contact Number: +91-9820040557"
+                />
+            <Button
+                android:id="@+id/VirendraCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Virendra3"
+                android:layout_below="@+id/Virendra2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/JyotsnaChild"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Virendra3"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="CHILDREN"
+                />
+
+            <TextView
+                android:id="@+id/JyotsnaPritesh"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/JyotsnaChild"
+                android:textSize="20dp"
+                android:text="Pritesh Virendra Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:textColor="@color/textColor"
+                android:layout_toEndOf="@id/JyotsnaPritesh"
+                android:layout_below="@id/JyotsnaChild"/>
+            <TextView
+                android:id="@+id/JyotsnaViral"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/JyotsnaPritesh"
+                android:textSize="20dp"
+                android:text="Viral Virendra Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:textColor="@color/textColor"
+                android:layout_toEndOf="@id/JyotsnaViral"
+                android:layout_below="@id/JyotsnaPritesh"/>
+
+            <TextView
+                android:id="@+id/JyotsnaHarshit"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/JyotsnaViral"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                android:text="Harshit Virendra Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:textColor="@color/textColor"
+                android:layout_toEndOf="@id/JyotsnaHarshit"
+                android:layout_below="@id/JyotsnaViral"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

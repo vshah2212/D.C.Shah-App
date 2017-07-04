@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "777000380242",
+    "firebase_url": "https://notificationcheck-d9e86.firebaseio.com",
+    "project_id": "notificationcheck-d9e86",
+    "storage_bucket": "notificationcheck-d9e86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777000380242:android:ff4042e7e5f0b454",
+        "android_client_info": {
+          "package_name": "com.vshah2212.dcshahplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777000380242-m6f8u70ip3d3bv9hrpl5r1hguke6prsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMarfdZW2qe6c0Z6mZvnzINewBYUJBLP0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

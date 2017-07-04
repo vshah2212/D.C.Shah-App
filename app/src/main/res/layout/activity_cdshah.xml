@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.CDShahActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Chinulal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="CHINULAL DAHYALAL SHAH" />
+    <TextView
+        android:id="@+id/ChinulalComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chinulal"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Shantilal &amp; Company" />
+
+    <TextView
+        android:id="@+id/ChinulalAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChinulalComp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: Walkeshwar" />
+
+    <TextView
+        android:id="@+id/Chinulal2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChinulalAddr"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textSize="16dp"
+        android:text="Blood Group: " />
+
+    <TextView
+        android:id="@+id/Chinulal3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Chinulal2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9821004819"
+        />
+    <Button
+        android:id="@+id/CDCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Chinulal3"
+        android:layout_below="@+id/Chinulal2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/Chinulal4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chinulal3"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-23690667"
+        />
+    <Button
+        android:id="@+id/CDCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Chinulal4"
+        android:layout_below="@+id/Chinulal3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/CDWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chinulal4"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Kanchan"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CDWife"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Kanchanben Chinubhai Shah"
+        />
+
+    <TextView
+        android:id="@+id/KanchanQuote"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kanchan"
+        android:textColor="@color/textColor"
+        android:textSize="17dp"
+        android:text="We know you'd be with us today if heaven wasn't so far away :)"
+        />
+
+    <TextView
+        android:id="@+id/CDChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KanchanQuote"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+
+    <TextView
+        android:id="@+id/CDDeepak"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CDChild"
+        android:textSize="20dp"
+        android:text="Deepak Chinubhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/CDDeepak"
+        android:layout_below="@id/CDChild"/>
+
+    <TextView
+        android:id="@+id/CDAmit"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/CDDeepak"
+        android:textSize="20dp"
+        android:text="Amit Chinubhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/CDAmit"
+        android:layout_below="@id/CDDeepak"/>
+
+    <TextView
+        android:id="@+id/CDDipti"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/CDAmit"
+        android:textSize="20dp"
+        android:text="Dipti Chinubhai Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/CDDipti"
+        android:layout_below="@id/CDAmit"/>
+
+</RelativeLayout>

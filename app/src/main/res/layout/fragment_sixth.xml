@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.SixthFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/tableChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/msg">
+
+    </TableLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:paddingRight="75dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textPersonName"
+        android:hint="Enter message"
+        android:background="@color/white"
+        android:layout_above="@+id/buttonSend"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="Send" />
+
+
+
+</RelativeLayout>
+
+
+</FrameLayout>

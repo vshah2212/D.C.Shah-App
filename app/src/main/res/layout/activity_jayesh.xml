@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.JayeshActivity">
+
+    <ImageView
+        android:id="@+id/JayeshImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jayesh"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Jayesh"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JayeshImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="JAYESH RASIKLAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jayesh">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/JayeshComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Aries International" />
+
+    <TextView
+        android:id="@+id/JayeshAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JayeshComp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: A/501, White Arch, Mathuradas Ext. Road, Kandivali(W). Mumbai-67" />
+
+    <TextView
+        android:id="@+id/Jayesh2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JayeshAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: B+" />
+
+    <TextView
+        android:id="@+id/Jayesh3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jayesh2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9321166747"
+        />
+    <Button
+        android:id="@+id/JayeshCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Jayesh3"
+        android:layout_below="@+id/Jayesh2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/Jayesh4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jayesh3"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-28013863"
+        />
+    <Button
+        android:id="@+id/JayeshCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Jayesh4"
+        android:layout_below="@+id/Jayesh3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/JayeshWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Jayesh4"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Jagruti"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/JayeshWife"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Jagruti Jayesh Shah"
+        />
+    <TextView
+        android:id="@+id/Jagruti2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jagruti"
+        android:textColor="@color/textColor"
+        android:textSize="17dp"
+        android:text="Blood Group: B+"
+        />
+    <TextView
+        android:id="@+id/Jagruti3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Jagruti2"
+        android:textSize="17dp"
+        android:text="Contact Number: +91-7738161377"
+        />
+    <Button
+        android:id="@+id/JagrutiCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Jagruti3"
+        android:layout_below="@+id/Jagruti2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/JayeshChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jagruti3"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/JayeshSakshi"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JayeshChild"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:text="Sakshi Jayesh Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/JayeshSakshi"
+        android:layout_below="@id/JayeshChild"/>
+    <TextView
+        android:id="@+id/JayeshNeerja"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/JayeshSakshi"
+        android:textSize="20dp"
+        android:text="Neerja Jayesh Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/JayeshNeerja"
+        android:layout_below="@id/JayeshSakshi"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

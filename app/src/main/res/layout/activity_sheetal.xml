@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.SheetalActivity">
+
+    <ImageView
+        android:id="@+id/SheetalImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColor"
+        android:id="@+id/Sheetal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SheetalImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="SHEETAL JAPEN SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sheetal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/SheetalAddr"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Residence: " />
+
+            <TextView
+                android:id="@+id/Sheetal2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SheetalAddr"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Blood Group: " />
+
+            <TextView
+                android:id="@+id/Sheetal3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sheetal2"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +91-9820909260"
+                />
+            <Button
+                android:id="@+id/SheetalCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Sheetal3"
+                android:layout_below="@+id/Sheetal2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/Sheetal4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/Sheetal3"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +022-28872584"
+                />
+            <Button
+                android:id="@+id/SheetalCall2"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Sheetal4"
+                android:layout_below="@+id/Sheetal3"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/SheetalHusband"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Sheetal4"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="HUSBAND"
+                />
+            <TextView
+                android:id="@+id/Japen"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/SheetalHusband"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="Japen Shah"
+                />
+
+            <TextView
+                android:id="@+id/SheetalComp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Japen"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Company: " />
+
+            <TextView
+                android:id="@+id/Japen2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SheetalComp"
+                android:textSize="17dp"
+                android:text="Blood Group: "
+                />
+            <TextView
+                android:id="@+id/Japen3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Japen2"
+                android:textSize="17dp"
+                android:text="Contact Number: +91-9820309260"
+                />
+            <Button
+                android:id="@+id/JapenCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Japen3"
+                android:layout_below="@+id/Japen2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/SheetalChild"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/Japen3"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:text="CHILDREN"
+                />
+
+            <TextView
+                android:id="@+id/SheetalHitansh"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SheetalChild"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                android:text="Hitansh Japen Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:layout_toEndOf="@id/SheetalHitansh"
+                android:layout_below="@id/SheetalChild"/>
+            <TextView
+                android:id="@+id/SheetalKavish"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SheetalHitansh"
+                android:textSize="20dp"
+                android:text="Kavish Japen Shah"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:layout_toEndOf="@id/SheetalKavish"
+                android:layout_below="@id/SheetalHitansh"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

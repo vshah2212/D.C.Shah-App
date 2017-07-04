@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.KetanActivity">
+
+    <ImageView
+        android:id="@+id/KetanImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/ketan"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/Ketan"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KetanImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="KETAN RASIKLAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ketan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/KetanComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Aditi Manufacturing" />
+
+    <TextView
+        android:id="@+id/KetanAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KetanComp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: C-102, Shree Parshwakunj CHSL, Mathuradas Road, Kandivali(W). Mumbai-67" />
+
+    <TextView
+        android:id="@+id/Ketan2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KetanAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: B+" />
+
+    <TextView
+        android:id="@+id/Ketan3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ketan2"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9820331715"
+        />
+    <Button
+        android:id="@+id/KetanCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Ketan3"
+        android:layout_below="@+id/Ketan2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/Ketan4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ketan3"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-28082643"
+        />
+    <Button
+        android:id="@+id/KetanCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Ketan4"
+        android:layout_below="@+id/Ketan3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/KetanWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ketan4"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Priti"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/KetanWife"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Priti Ketan Shah"
+        />
+    <TextView
+        android:id="@+id/Priti2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Priti"
+        android:textSize="17dp"
+        android:text="Blood Group:B+"
+        />
+    <TextView
+        android:id="@+id/Priti3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Priti2"
+        android:textSize="17dp"
+        android:text="Contact Number: +91-9833766656"
+        />
+    <Button
+        android:id="@+id/PritiCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Priti3"
+        android:layout_below="@+id/Priti2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/KetanChild"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Priti3"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/KetanVaibhav"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KetanChild"
+        android:textSize="20dp"
+        android:text="Vaibhav Ketan Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KetanVaibhav"
+        android:layout_below="@id/KetanChild"/>
+    <TextView
+        android:id="@+id/KetanMokshit"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KetanVaibhav"
+        android:textSize="20dp"
+        android:text="Mokshit Ketan Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KetanMokshit"
+        android:layout_below="@id/KetanVaibhav"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.KDShahActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Kantilal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="KANTILAL DAHYALAL SHAH" />
+
+    <TextView
+        android:id="@+id/KantilalAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Kantilal"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: Borivali(W)" />
+
+
+    <TextView
+        android:id="@+id/KDWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KantilalAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Narangi"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KDWife"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Narangiben Kantilal Shah"
+        />
+    <TextView
+        android:id="@+id/NarangiQuote"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Narangi"
+        android:textColor="@color/textColor"
+        android:textSize="17dp"
+        android:text="No one you love is ever truly lost :)"
+        />
+
+    <TextView
+        android:id="@+id/KDChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NarangiQuote"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/KDJyotsna"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KDChild"
+        android:textSize="20dp"
+        android:text="Jyotsna Virendra Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KDJyotsna"
+        android:layout_below="@id/KDChild"/>
+
+    <TextView
+        android:id="@+id/KDManoj"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/KDJyotsna"
+        android:textSize="20dp"
+        android:text="Manoj Kantibhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/KDManoj"
+        android:layout_below="@id/KDJyotsna"/>
+
+    <TextView
+        android:id="@+id/KDKirit"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KDManoj"
+        android:textSize="20dp"
+        android:text="Kirit Kantibhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KDKirit"
+        android:layout_below="@id/KDManoj"/>
+
+
+    <TextView
+        android:id="@+id/KDSonal"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/textColor"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KDKirit"
+        android:textSize="20dp"
+        android:text="Sonal Sanjay Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KDSonal"
+        android:layout_below="@id/KDKirit"/>
+
+
+</RelativeLayout>

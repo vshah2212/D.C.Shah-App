@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.RDShahActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/RasikImage"
+        android:layout_height="500px"
+        android:src="@drawable/rasik"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Rasiklal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RasikImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="RASIKLAL DAHYALAL SHAH" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rasiklal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/RasiklalAddr"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: Kandivali(W)" />
+
+    <TextView
+        android:id="@+id/RDWife"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RasiklalAddr"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Asha"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDWife"
+        android:textSize="19dp"
+        android:text="Ashaben Rasiklal Shah"
+        />
+
+            <TextView
+                android:id="@+id/Shanti"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Asha"
+                android:textSize="19dp"
+                android:text="Shantiben Rasiklal Shah"
+                />
+
+    <TextView
+        android:id="@+id/RDChild"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Shanti"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/RDSudhir"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDChild"
+        android:textSize="20dp"
+        android:text="Sudhir Rasikbhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/RDSudhir"
+        android:layout_below="@id/RDChild"/>
+
+    <TextView
+        android:id="@+id/RDNaina"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDSudhir"
+        android:textSize="20dp"
+        android:text="Naina Rasikbhai Shah"
+        />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowright"
+                android:layout_toEndOf="@id/RDNaina"
+                android:layout_below="@id/RDSudhir"/>
+
+    <TextView
+        android:id="@+id/RDKishor"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDNaina"
+        android:textSize="20dp"
+        android:text="Kishor Rasikbhai Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/RDKishor"
+        android:layout_below="@id/RDNaina"/>
+
+    <TextView
+        android:id="@+id/RDKetan"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDKishor"
+        android:textSize="20dp"
+        android:text="Ketan Rasikbhai Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/RDKetan"
+        android:layout_below="@id/RDKishor"/>
+
+    <TextView
+        android:id="@+id/RDJayesh"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDKetan"
+        android:textSize="20dp"
+        android:text="Jayesh Rasikbhai Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/RDJayesh"
+        android:layout_below="@id/RDKetan"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

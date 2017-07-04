@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.ManojActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Manoj"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="MANOJ KANTILAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Manoj">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ManojComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Laxmi Printers" />
+
+    <TextView
+        android:id="@+id/ManojAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ManojComp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: E-619, Veena Santoor, Saibaba Nagar, Borivali(W). Mumbai-92" />
+
+    <TextView
+        android:id="@+id/Manoj2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ManojAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: B+" />
+
+    <TextView
+        android:id="@+id/Manoj3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Manoj2"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9869006865"
+        />
+    <Button
+        android:id="@+id/ManojCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Manoj3"
+        android:layout_below="@+id/Manoj2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/Manoj4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Manoj3"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-28053809"
+        />
+    <Button
+        android:id="@+id/ManojCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Manoj4"
+        android:layout_below="@+id/Manoj3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/ManojWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Manoj4"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Shilpa"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ManojWife"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Shilpa Manoj Shah"
+        />
+    <TextView
+        android:id="@+id/Shilpa2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Shilpa"
+        android:textSize="17dp"
+        android:text="Blood Group:B+"
+        />
+    <TextView
+        android:id="@+id/Shilpa3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Shilpa2"
+        android:textSize="17dp"
+        android:text="Contact Number: +91-9969085037"
+        />
+    <Button
+        android:id="@+id/ShilpaCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Shilpa3"
+        android:layout_below="@+id/Shilpa2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/ManojChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Shilpa3"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/ManojHardik"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ManojChild"
+        android:textSize="20dp"
+        android:text="Hardik Manoj Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/ManojHardik"
+        android:layout_below="@id/ManojChild"/>
+    <TextView
+        android:id="@+id/ManojManan"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ManojHardik"
+        android:textSize="20dp"
+        android:text="Manan Manoj Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/ManojManan"
+        android:layout_below="@id/ManojHardik"/>
+
+</RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

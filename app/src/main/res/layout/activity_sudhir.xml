@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.SudhirActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Sudhir"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="SUDHIR RASIKLAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sudhir">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/SudhirComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Rushab Enterprise" />
+
+    <TextView
+        android:id="@+id/SudhirAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SudhirComp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: B-2/202, Dayal Smruti, Shantilal Modi Road, Kandivali(W). Mumbai-67" />
+
+    <TextView
+        android:id="@+id/Sudhir2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SudhirAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: AB+" />
+
+    <TextView
+        android:id="@+id/Sudhir3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Sudhir2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9821488165"
+        />
+    <Button
+        android:id="@+id/SudhirCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Sudhir3"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Sudhir2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+    <TextView
+        android:id="@+id/Sudhir4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sudhir3"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textSize="16dp"
+        android:text="Contact number: +022-28072286"
+        />
+    <Button
+        android:id="@+id/SudhirCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Sudhir4"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Sudhir3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/SudhirWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Sudhir4"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+
+    <TextView
+        android:id="@+id/Usha"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SudhirWife"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Usha Sudhir Shah"
+        />
+    <TextView
+        android:id="@+id/UshaQuote"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Usha"
+        android:textColor="@color/textColor"
+        android:textSize="17dp"
+        android:text="When someone you love becomes a memory, that memory becomes a TREASURE :)"
+        />
+
+    <TextView
+        android:id="@+id/SudhirChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/UshaQuote"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/SudhirSheetal"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/SudhirChild"
+        android:textSize="20dp"
+        android:text="Sheetal Japen Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/SudhirSheetal"
+        android:layout_below="@id/SudhirChild"/>
+
+    <TextView
+        android:id="@+id/SudhirRahul"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/textColor"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SudhirSheetal"
+        android:textSize="20dp"
+        android:text="Rahul Sudhir Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/SudhirRahul"
+        android:layout_below="@id/SudhirSheetal"/>
+    <TextView
+        android:id="@+id/SudhirPratik"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SudhirRahul"
+        android:textSize="20dp"
+        android:text="Pratik Sudhir Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/SudhirPratik"
+        android:layout_below="@id/SudhirRahul"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.NainaActivity">
+
+    <ImageView
+        android:id="@+id/NainaImage"
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/naina"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Naina"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NainaImage"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="NAINA RASIKLAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Naina">
+
+    <TextView
+        android:id="@+id/NainaQuote"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="You may be gone from our sight, but you'll always have a place in our hearts :)" />
+
+    </ScrollView>
+
+</RelativeLayout>

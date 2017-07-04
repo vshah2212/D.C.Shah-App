@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.KishorActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/Kishor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="KISHOR RASIKLAL SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kishor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/KishorComp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: Jaydeep Packaging" />
+
+    <TextView
+        android:id="@+id/KishorAddr"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KishorComp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: Flat no.:4,2nd Floor, Ganga Kunj Bldg., Mathuradas Road, Kandivali(W). Mumbai-67" />
+
+    <TextView
+        android:id="@+id/Kishor2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KishorAddr"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: A+" />
+
+    <TextView
+        android:id="@+id/Kishor3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kishor2"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9869010907"
+        />
+    <Button
+        android:id="@+id/KishorCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Kishor3"
+        android:layout_below="@+id/Kishor2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+    <TextView
+        android:id="@+id/Kishor4"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kishor3"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-28622794"
+        />
+    <Button
+        android:id="@+id/KishorCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Kishor4"
+        android:layout_below="@+id/Kishor3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/KishorWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kishor4"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Bhavana"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/KishorWife"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Bhavana Kishor Shah"
+        />
+    <TextView
+        android:id="@+id/Bhavana2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bhavana"
+        android:textSize="17dp"
+        android:text="Blood Group: O+"
+        />
+    <TextView
+        android:id="@+id/Bhavana3"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bhavana2"
+        android:textSize="17dp"
+        android:text="Contact Number: +91-9969622614"
+        />
+    <Button
+        android:id="@+id/BhavanaCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Bhavana3"
+        android:layout_below="@+id/Bhavana2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/KishorChild"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bhavana3"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/KishorNeha"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KishorChild"
+        android:textSize="20dp"
+        android:text="Neha Bhavesh Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/KishorNeha"
+        android:layout_below="@id/KishorChild"/>
+    <TextView
+        android:id="@+id/KishorIsha"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KishorNeha"
+        android:textSize="20dp"
+        android:text="Isha Aditya Shah"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KishorIsha"
+        android:layout_below="@id/KishorNeha"/>
+
+    <TextView
+        android:id="@+id/KishorTejas"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KishorIsha"
+        android:textSize="20dp"
+        android:text="Tejas Kishor Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/KishorTejas"
+        android:layout_below="@id/KishorIsha"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

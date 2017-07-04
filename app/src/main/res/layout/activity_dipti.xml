@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.DiptiActivity">
+
+    <ImageView
+        android:id="@+id/DiptiImage"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Dipti"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DiptiImage"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="DIPTI CHINUBHAI SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dipti">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/DiptiAddr"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Residence: 87 Walkeshwar Road, 3/10 Jai Bhagwan Bldg. Mumbai-06" />
+
+            <TextView
+                android:id="@+id/DiptiComp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/DiptiAddr"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Company: " />
+
+            <TextView
+                android:id="@+id/Dipti2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DiptiComp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Blood Group: B+" />
+
+            <TextView
+                android:id="@+id/Dipti3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/Dipti2"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +91-9820329024"
+                />
+            <Button
+                android:id="@+id/DiptiCall"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Dipti3"
+                android:layout_below="@+id/Dipti2"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            <TextView
+                android:id="@+id/Dipti4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/Dipti3"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Contact number: +022-23690667"
+                />
+            <Button
+                android:id="@+id/DiptiCall2"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_toEndOf="@+id/Dipti4"
+                android:layout_below="@+id/Dipti3"
+                android:background="@android:drawable/ic_menu_call"
+                />
+
+            </RelativeLayout>
+    </ScrollView>
+
+        </RelativeLayout>

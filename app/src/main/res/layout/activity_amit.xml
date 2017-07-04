@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vshah2212.dcshahplanner.AmitActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColor"
+        android:id="@+id/Amit"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:text="AMIT CHINUBHAI SHAH" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Amit">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/AmitComp"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Company: " />
+
+    <TextView
+        android:id="@+id/AmitAddr"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmitComp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Residence: 87 Walkeshwar Road, 3/10 Jai Bhagwan Bldg. Mumbai-06" />
+
+    <TextView
+        android:id="@+id/Amit2"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmitAddr"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Blood Group: AB+" />
+
+    <TextView
+        android:id="@+id/Amit3"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Amit2"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +91-9969055525"
+        />
+    <Button
+        android:id="@+id/AmitCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Amit3"
+        android:layout_below="@+id/Amit2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/Amit4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Amit3"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="Contact number: +022-23690667"
+        />
+    <Button
+        android:id="@+id/AmitCall2"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Amit4"
+        android:layout_below="@+id/Amit3"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/AmitWife"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Amit4"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="WIFE"
+        />
+    <TextView
+        android:id="@+id/Rajeshree"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmitWife"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="Rajeshree Amit Shah"
+        />
+    <TextView
+        android:id="@+id/Rajeshree2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Rajeshree"
+        android:textSize="17dp"
+        android:text="Blood Group: A+"
+        />
+    <TextView
+        android:id="@+id/Rajeshree3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Rajeshree2"
+        android:textSize="17dp"
+        android:text="Contact Number: +91-7738334544"
+        />
+    <Button
+        android:id="@+id/RajeshreeCall"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_toEndOf="@+id/Rajeshree3"
+        android:layout_below="@+id/Rajeshree2"
+        android:background="@android:drawable/ic_menu_call"
+        />
+
+    <TextView
+        android:id="@+id/AmitChild"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/Rajeshree3"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:text="CHILDREN"
+        />
+
+    <TextView
+        android:id="@+id/AmitDevanshi"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/AmitChild"
+        android:textSize="20dp"
+        android:text="Devanshi Amit Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/arrowright"
+        android:layout_toEndOf="@id/AmitDevanshi"
+        android:layout_below="@id/AmitChild"/>
+
+
+
+    <TextView
+        android:id="@+id/AmitRicha"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmitDevanshi"
+        android:textSize="20dp"
+        android:text="Richa Amit Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/AmitRicha"
+        android:layout_below="@id/AmitDevanshi"/>
+
+    <TextView
+        android:id="@+id/AmitAayush"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/AmitRicha"
+        android:textSize="20dp"
+        android:text="Aayush Amit Shah"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/arrowright"
+        android:textColor="@color/textColor"
+        android:layout_toEndOf="@id/AmitAayush"
+        android:layout_below="@id/AmitRicha"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
