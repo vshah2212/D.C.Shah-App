@@ -1,23 +1,20 @@
 package com.vshah2212.dcshahplanner;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -30,6 +27,7 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Random;
 
 import cz.msebera.android.httpclient.HttpEntity;
 import cz.msebera.android.httpclient.HttpResponse;
@@ -58,8 +56,9 @@ public class SixthFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    Button btn1;
+    Button btn1,refr;
     EditText textmsg;
+    ScrollView scroll;
 
     private OnFragmentInteractionListener mListener;
 
@@ -99,7 +98,7 @@ public class SixthFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_sixth, container, false);
+        final View view= inflater.inflate(R.layout.fragment_sixth, container, false);
 
         // NOTE : We are calling the onFragmentInteraction() declared in the MainActivity
         // ie we are sending "Fragment 1" as title parameter when fragment1 is activated
@@ -113,7 +112,9 @@ public class SixthFragment extends Fragment {
 
 
         btn1 = (Button) view.findViewById(R.id.buttonSend);
+        refr = (Button) view.findViewById(R.id.buttonRefresh);
         textmsg = (EditText) view.findViewById(R.id.msg);
+        scroll = (ScrollView) view.findViewById(R.id.Scroll);
 
 
 
@@ -127,12 +128,42 @@ public class SixthFragment extends Fragment {
 btn1.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        String pass = nm+","+textmsg.getText() ;
+        String txtmsg = textmsg.getText().toString().trim();
+
+        while(txtmsg.contains(" "))
+        {
+            int ind=txtmsg.indexOf(" ");
+            txtmsg = txtmsg.substring(0,ind)+"."+txtmsg.substring(ind+1);
+        }
+
+
+        String pass = nm+","+txtmsg ;
         new PutChat(getContext()).execute(pass);
+        textmsg.setText(null);
+        DisplayChat(view);
+        scroll.fullScroll(View.FOCUS_DOWN);
     }
 });
 
+        DisplayChat(view);
+        scroll.fullScroll(View.FOCUS_DOWN);
 
+
+        refr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DisplayChat(view);
+                scroll.fullScroll(View.FOCUS_DOWN);
+            }
+        });
+
+
+        return view;
+    }
+
+
+    public void DisplayChat(View view)
+    {
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy =
                     new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -232,14 +263,30 @@ btn1.setOnClickListener(new View.OnClickListener() {
                     b1.setPadding(10, 0, 0, 0);
                     b1.setTextSize(15);
                     String stime1=json_data.getString("Name");
-                    stime1 = stime1 + " says: ";
+
+                    while(stime1.contains("."))
+                    {
+                        int ind=stime1.indexOf(".");
+                        stime1 = stime1.substring(0,ind)+" "+stime1.substring(ind+1);
+                    }
+
+                    Random rnd = new Random();
+                    stime1 = stime1 + " said: ";
                     b1.setText(stime1);
-                    b1.setTextColor(Color.RED);
+                    b1.setTypeface(Typeface.DEFAULT_BOLD);
+                    b1.setTextColor(Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)));
                     tr.addView(b1);
 
                     TextView b2=new TextView(getContext());
                     b2.setPadding(40, 0, 0, 0);
                     String stime2=json_data.getString("Message");
+
+                    while(stime2.contains("."))
+                    {
+                        int ind=stime2.indexOf(".");
+                        stime2 = stime2.substring(0,ind)+" "+stime2.substring(ind+1);
+                    }
+
                     b2.setText(stime2);
                     b2.setTextColor(Color.BLUE);
                     b2.setTextSize(15);
@@ -265,15 +312,7 @@ btn1.setOnClickListener(new View.OnClickListener() {
             Log.e("log_tag", "Error parsing data "+e.toString());
             Toast.makeText(getContext(), "JsonArray fail", Toast.LENGTH_SHORT).show();
         }
-
-
-
-
-
-        return view;
     }
-
-
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

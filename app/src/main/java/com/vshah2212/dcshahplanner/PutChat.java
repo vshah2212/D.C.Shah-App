@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -72,7 +73,7 @@ class PutChat extends AsyncTask<String, Void, String> {
             Toast.makeText(ctx,"Message sent!",Toast.LENGTH_SHORT).show();
         }
         else {
-            Toast.makeText(ctx,"Invalid ID or PASSWORD",Toast.LENGTH_LONG).show();
+            Toast.makeText(ctx,"Error in sending message!",Toast.LENGTH_LONG).show();
         }
 
     }

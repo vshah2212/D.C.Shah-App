@@ -65,8 +65,14 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 String newnm = name.getText().toString().trim();
-                int ind=newnm.indexOf(" ");
-                String nm = newnm.substring(0,ind)+"."+newnm.substring(ind+1);
+
+                while(newnm.contains(" "))
+                {
+                    int ind=newnm.indexOf(" ");
+                    newnm = newnm.substring(0,ind)+"."+newnm.substring(ind+1);
+                }
+
+                String nm = newnm;
                 String addr = address.getText().toString().trim();
                 String date = dob.getText().toString().trim();
                 String ph = phone.getText().toString().trim();
